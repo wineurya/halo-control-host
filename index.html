@@ -140,9 +140,266 @@ body{background:#F4F4F7;min-height:100vh}
 </style>
 </head>
 <body>
-<div id="hr"><div id="hd"></div></div>
+<div id="hr"><div id="hd">
+
+<nav class="nr">
+  <div class="nrlog">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <circle cx="10" cy="10" r="9" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
+      <circle cx="10" cy="10" r="3" fill="rgba(107,95,232,.8)"/>
+    </svg>
+  </div>
+  <div id="nic"></div>
+  <div class="nrsp"></div>
+  <div class="nrav">WA</div>
+</nav>
+
+<main class="ma">
+  <header class="tb">
+    <div class="bc">
+      <span>Halo Control</span><span class="bcsep"> &rsaquo; </span>
+      <span>Operations</span><span class="bcsep"> &rsaquo; </span>
+      <span class="bccur">Overview</span>
+    </div>
+    <div class="tbsp"></div>
+    <div class="cmd">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      <span>Search or ask anything</span><kbd>&#8984;K</kbd>
+    </div>
+    <div class="tbacts">
+      <div class="ib">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      </div>
+      <div class="uc">
+        <div class="ucav">WA</div>
+        <span class="ucnm">Wineury A.</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="cs">
+    <div class="hrow">
+      <div class="c herp">
+        <div class="herlbl">Monthly Recurring Revenue</div>
+        <div class="herval"><sup>$</sup><span id="hn">0.0</span><span style="font-size:15px;font-weight:300;color:var(--t3);margin-left:2px">M</span></div>
+        <div class="herbtm">
+          <span class="herchg">&#8593; +12.4%</span>
+          <span class="hermeta"><b>$3.74M</b> prior &nbsp;&middot;&nbsp; <b>$41.2M</b> ARR</span>
+        </div>
+      </div>
+      <div class="c aic">
+        <div class="aihd">
+          <div class="aiorb"></div>
+          <span class="ailbl">Halo Intelligence</span>
+          <span class="aiver">v2.1</span>
+        </div>
+        <p class="aitxt">Revenue is <b>ahead of forecast by 8 days.</b> Enterprise Q3 cohort shows 34% higher retention. Recommend expanding APAC outreach.</p>
+        <button class="aibtn">Generate plan &rarr;</button>
+      </div>
+    </div>
+
+    <div class="krow" id="kr"></div>
+
+    <div class="mrow">
+      <div class="c chp">
+        <div class="phd">
+          <div><div class="pttl">Revenue Overview</div><div class="psub">MRR vs. Operating Cost &middot; 16-week trend</div></div>
+          <div class="fbtns"><button class="fb">4W</button><button class="fb on">16W</button><button class="fb">1Y</button></div>
+        </div>
+        <div class="chleg">
+          <span class="legi"><span class="legdot" style="background:var(--vi)"></span>MRR</span>
+          <span class="legi"><span class="legdot" style="background:var(--ok)"></span>Op. Cost</span>
+        </div>
+        <svg id="rch" viewBox="0 0 480 140" preserveAspectRatio="none" style="width:100%;flex:1;display:block;min-height:0"></svg>
+      </div>
+      <div class="c qp">
+        <div class="qpttl">AI Action Queue</div>
+        <div class="qpsub">6 active &middot; 2 pending review</div>
+        <div id="ql"></div>
+      </div>
+    </div>
+
+    <div class="brow">
+      <div class="c sp"><div class="spttl">Team Activity</div><div id="al"></div></div>
+      <div class="c sp"><div class="spttl">Anomaly Alerts</div><div id="atl"></div></div>
+      <div class="c sp"><div class="spttl">Workflow Health</div><div id="wl"></div></div>
+    </div>
+  </div>
+</main>
+
+<aside class="drw">
+  <div class="dh">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(107,95,232,.5)" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+    <span class="dttl">Intelligence</span>
+    <span class="dtag">Live</span>
+  </div>
+  <div class="dtgl">
+    <button class="dtb on">Now</button><button class="dtb">Weekly</button><button class="dtb">Archive</button>
+  </div>
+  <div class="dbd">
+    <div class="inc">
+      <span class="intag tgr">Growth Signal</span>
+      <p class="intxt">Enterprise MRR up <b>+18.2%</b> this week. Q3 cohort showing unusually high NPS delta across all tiers.</p>
+      <div class="inact">View segment &rsaquo;</div>
+    </div>
+    <div class="inc">
+      <span class="intag tga">Anomaly</span>
+      <p class="intxt">Latency spike in <b>EU-West</b> at 14:22 UTC. P95 hit 4.2s. Autofix queued.</p>
+      <div class="inact">Review trace &rsaquo;</div>
+    </div>
+    <div class="inc">
+      <span class="intag tgf">Forecast</span>
+      <p class="intxt">MRR projected to reach <b>$4.8M</b> by Q4-end if current trajectory holds &plusmn;3%.</p>
+      <div class="inact">Full forecast &rsaquo;</div>
+    </div>
+    <div class="dsec">Recent Automations</div>
+    <div id="aul"></div>
+    <div class="dsec" style="margin-top:5px">Quick Actions</div>
+    <div class="qagrid" id="qag"></div>
+  </div>
+</aside>
+
+</div></div>
+
 <script>
-document.getElementById('hd').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-family:var(--ff);color:#6C6C76">Hosted minimal shell. Replace with full body/script if needed.</div>';
+var HR=document.getElementById('hr'),HD=document.getElementById('hd');
+function scl(){var s=Math.min(window.innerWidth/1320,1);HD.style.transform='scale('+s+')';HR.style.height=(840*s)+'px';}
+scl();window.addEventListener('resize',scl);
+
+var NAVS=[
+  ['M3 3h4v4H3zm0 6h4v4H3zm0 6h4v4H3zm6-12h4v4H9zm0 6h4v4H9zm0 6h4v4H9zm6-12h4v4h-4zm0 6h4v4h-4zm0 6h4v4h-4z','Dashboard',true],
+  ['M4 18h2V9H4zm5 0h2V5H9zm5 0h2v-6h-2zm5 0h2V2h-2z','Analytics'],
+  ['M14 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM6 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM14 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM8 10.5l4-3M8 11.5l4 3','Workflows'],
+  ['M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z','Team'],
+  ['M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06A1.65 1.65 0 0 0 15 19.4a1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z','Settings'],
+];
+var nic=document.getElementById('nic');
+NAVS.forEach(function(n){
+  var d=document.createElement('div');d.className='ni'+(n[2]?' on':'');d.title=n[1];
+  d.innerHTML='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="'+n[0]+'"/></svg>';
+  nic.appendChild(d);
+});
+
+function f(n){return n.toFixed(1);}
+function spark(data,col){
+  var mn=Math.min.apply(null,data),mx=Math.max.apply(null,data),rng=mx-mn||1;
+  var pts=data.map(function(v,i){return[i/(data.length-1)*100,(1-(v-mn)/rng)*22+3];});
+  var d='M'+f(pts[0][0])+','+f(pts[0][1]);
+  for(var i=1;i<pts.length;i++){var px=pts[i-1][0],py=pts[i-1][1],qx=pts[i][0],qy=pts[i][1],t=(qx-px)*.4;d+=' C'+f(px+t)+','+f(py)+' '+f(qx-t)+','+f(qy)+' '+f(qx)+','+f(qy);}
+  return '<path d="'+d+'" stroke="'+col+'" stroke-width="1.2" fill="none"/>';
+}
+
+var KPIS=[
+  {v:14821,l:'Active Users',ch:'+8.3%',cc:'var(--ok)',ico:'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z',sp:[11,12,11.5,13,12.8,14,13.5,14.2,14,14.5,14.3,14.8,14.5,15,14.8,15.2],sc:'#1BA87C'},
+  {v:1.2,l:'Avg Response (s)',ch:'-0.4s',cc:'var(--cy)',ico:'M13 2L3 14h9l-1 8 10-12h-9l1-8z',sp:[2.1,1.9,2.0,1.8,1.7,1.85,1.6,1.5,1.55,1.4,1.45,1.3,1.35,1.25,1.2,1.2],sc:'#2795BC',dec:1},
+  {v:8934,l:'Tasks Completed',ch:'+23%',cc:'var(--vi)',ico:'M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z',sp:[5200,5800,6100,6400,6200,6800,7100,7400,7200,7800,8100,8400,8200,8700,8900,9100],sc:'#6B5FE8'},
+  {v:2341,l:'AI Actions Today',ch:'+341',cc:'var(--wn)',ico:'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z',sp:[1400,1500,1600,1700,1650,1800,1900,1950,2000,2100,2050,2200,2150,2250,2300,2341],sc:'#B87828'},
+];
+var kr=document.getElementById('kr');
+KPIS.forEach(function(k){
+  var el=document.createElement('div');el.className='c kpi';
+  el.innerHTML='<div class="kpihd"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--t3)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="'+k.ico+'"/></svg><span class="kpichg" style="color:'+k.cc+'">'+k.ch+'</span></div><div class="kpiv" data-t="'+k.v+'" data-d="'+(k.dec||0)+'">'+(k.dec?k.v.toFixed(k.dec):k.v.toLocaleString())+'</div><div class="kpil">'+k.l+'</div><svg width="100%" height="24" viewBox="0 0 100 28" preserveAspectRatio="none">'+spark(k.sp,k.sc)+'</svg>';
+  kr.appendChild(el);
+});
+
+var RCH=document.getElementById('rch');
+var MRR=[3.2,3.4,3.3,3.6,3.8,3.7,3.9,4.0,3.9,4.1,4.0,4.2,4.1,4.3,4.2,4.4];
+var CST=[1.8,1.9,1.85,1.9,2.0,1.95,2.0,2.05,2.0,2.1,2.05,2.1,2.0,2.15,2.1,2.2];
+var PL=34,PR=6,PT=8,PB=26,CW=480,CH=140;
+var cw=CW-PL-PR,ch=CH-PT-PB,YMN=1.3,YMX=4.9;
+function cx(i){return PL+i/(MRR.length-1)*cw;}
+function cy(v){return PT+(1-(v-YMN)/(YMX-YMN))*ch;}
+function bline(data){
+  var pts=data.map(function(v,i){return[cx(i),cy(v)];});
+  var d='M'+f(pts[0][0])+','+f(pts[0][1]);
+  for(var i=1;i<pts.length;i++){var px=pts[i-1][0],py=pts[i-1][1],qx=pts[i][0],qy=pts[i][1],t=(qx-px)*.35;d+=' C'+f(px+t)+','+f(py)+' '+f(qx-t)+','+f(qy)+' '+f(qx)+','+f(qy);}
+  return d;
+}
+var ml=bline(MRR),cl=bline(CST);
+var glines=[2,2.5,3,3.5,4,4.5].map(function(y){return'<line x1="'+PL+'" y1="'+f(cy(y))+'" x2="'+(CW-PR)+'" y2="'+f(cy(y))+'" stroke="rgba(0,0,0,.05)" stroke-width="1"/>';}).join('');
+var ylbls=[2,3,4].map(function(y){return'<text x="'+(PL-5)+'" y="'+f(cy(y)+4)+'" text-anchor="end" fill="#ADADB8" font-size="9" font-family="system-ui">'+y+'M</text>';}).join('');
+var xlbls=['W1','W4','W8','W12','W16'].map(function(l,i){var ix=[0,3,7,11,15];return'<text x="'+f(cx(ix[i]))+'" y="'+(CH-6)+'" text-anchor="middle" fill="#ADADB8" font-size="9" font-family="system-ui">'+l+'</text>';}).join('');
+RCH.innerHTML=glines+ylbls+xlbls+'<path d="'+cl+'" stroke="#1BA87C" stroke-width="1" fill="none" stroke-dasharray="4 3" stroke-linecap="round"/><path id="ml" d="'+ml+'" stroke="#6B5FE8" stroke-width="1.5" fill="none" stroke-linecap="round"/>';
+setTimeout(function(){
+  var el=RCH.querySelector('#ml');if(!el)return;
+  var len=el.getTotalLength?el.getTotalLength():500;
+  el.style.strokeDasharray=len;el.style.strokeDashoffset=len;el.style.transition='none';
+  requestAnimationFrame(function(){requestAnimationFrame(function(){el.style.transition='stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1)';el.style.strokeDashoffset='0';});});
+},300);
+
+document.querySelectorAll('.fb').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.fb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');});});
+document.querySelectorAll('.dtb').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.dtb').forEach(function(x){x.classList.remove('on');});b.classList.add('on');});});
+
+var QDATA=[
+  ['Churn Risk Detection','ML · Cohort analysis','qrun','var(--cy)','Running'],
+  ['Invoice Reconciliation','Finance · Auto-match','qdn','var(--ok)','Done'],
+  ['Lead Score Refresh','CRM · Score update','qq','var(--t3)','Queued'],
+  ['APAC Outreach Sync','Marketing · Sequence','qrun','var(--cy)','Running'],
+  ['Anomaly Report Gen','Analytics · Weekly','qrv','var(--vi)','Review'],
+  ['Onboarding A/B Test','Product · Experiment','qq','var(--t3)','Queued'],
+];
+var ql=document.getElementById('ql');
+QDATA.forEach(function(q){
+  var d=document.createElement('div');d.className='qi';
+  d.innerHTML='<div class="qdot '+q[2]+'"></div><div class="qinf"><div class="qnm">'+q[0]+'</div><div class="qsb">'+q[1]+'</div></div><span class="qstat" style="color:'+q[3]+'">'+q[4]+'</span>';
+  ql.appendChild(d);
+});
+
+var TEAM=[['Aria Chen','deployed workflow v3.2','2m'],['Marcus Webb','approved anomaly patch','8m'],['Priya Nair','updated KPI thresholds','14m'],['Sam Torres','triggered APAC sync','23m'],['Jade Kim','reviewed AI action log','41m']];
+var al=document.getElementById('al');
+TEAM.forEach(function(a){
+  var d=document.createElement('div');d.className='acti';
+  var ini=a[0].split(' ').map(function(n){return n[0];}).join('');
+  d.innerHTML='<div class="actav">'+ini+'</div><span class="actnm">'+a[0]+' <span class="actac">· '+a[1]+'</span></span><span class="acttm">'+a[2]+'</span>';
+  al.appendChild(d);
+});
+
+var ALTS=[['critical','EU-West latency spike','· P95 > 4.2s','6m'],['warning','Ingest backlog growing','· queue depth 2.4K','12m'],['warning','Low CDN cache hit rate','· 61% vs 90%','28m'],['ok','Auth anomaly resolved','· rate limit lifted','1h'],['ok','Cert renewal complete','· all regions','2h']];
+var atl=document.getElementById('atl');
+ALTS.forEach(function(a){
+  var gc=a[0]==='critical'?'agcr':a[0]==='warning'?'agwn':'agok';
+  var d=document.createElement('div');d.className='alti';
+  d.innerHTML='<div class="ag '+gc+'"></div><span class="altnm">'+a[1]+' <span class="altsb">'+a[2]+'</span></span><span class="alttm">'+a[3]+'</span>';
+  atl.appendChild(d);
+});
+
+var WFS=[['Customer Onboarding',92,'#1BA87C'],['Billing Automation',98,'#1BA87C'],['EU Data Compliance',71,'#B87828'],['AI Model Retraining',54,'#6B5FE8'],['Churn Prevention',85,'#2795BC']];
+var wl=document.getElementById('wl');
+WFS.forEach(function(w){
+  var d=document.createElement('div');d.className='wfi';
+  d.innerHTML='<div class="wfhd"><span class="wfnm">'+w[0]+'</span><span class="wfpc">'+w[1]+'%</span></div><div class="wfbg"><div class="wfbar" style="background:'+w[2]+'" data-w="'+w[1]+'"></div></div>';
+  wl.appendChild(d);
+});
+setTimeout(function(){document.querySelectorAll('.wfbar').forEach(function(b){b.style.width=b.dataset.w+'%';});},150);
+
+var AUTS=[['Churn Alert Trigger','342 runs'],['Weekly Report Gen','18 runs'],['Lead Score Refresh','1.2K runs']];
+var aul=document.getElementById('aul');
+AUTS.forEach(function(a){
+  var d=document.createElement('div');d.className='aui';
+  d.innerHTML='<span class="aunm">'+a[0]+'</span><span class="auct">'+a[1]+'</span>';
+  aul.appendChild(d);
+});
+
+var QAS=[['Run Workflow','M5 3l14 9-14 9V3z'],['New Report','M14 2H6a2 2 0 0 0-2 2v16h16V8zM14 2v6h6'],['Set Alert','M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9'],['Ask Halo AI','M12 2l3 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z']];
+var qag=document.getElementById('qag');
+QAS.forEach(function(q){
+  var b=document.createElement('button');b.className='qabtn';
+  b.innerHTML='<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--t2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="'+q[1]+'"/></svg><span class="qalbl">'+q[0]+'</span>';
+  qag.appendChild(b);
+});
+
+function countUp(el,target,dur,dec){
+  var st=Date.now();
+  (function tick(){var t=Math.min((Date.now()-st)/dur,1),e=1-Math.pow(1-t,3),v=e*target;el.textContent=dec?v.toFixed(dec):Math.round(v).toLocaleString();if(t<1)requestAnimationFrame(tick);})();
+}
+setTimeout(function(){
+  countUp(document.getElementById('hn'),4.2,1400,1);
+  document.querySelectorAll('.kpiv').forEach(function(el){
+    var t=parseFloat(el.dataset.t),d=parseInt(el.dataset.d||0);
+    el.textContent=d?'0.0':'0';
+    setTimeout(function(){countUp(el,t,1100,d);},80+Math.random()*120);
+  });
+},150);
 </script>
 </body>
 </html>
